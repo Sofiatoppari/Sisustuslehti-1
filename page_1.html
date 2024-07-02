@@ -1,35 +1,53 @@
-
-        <html>
-        <head>
-            <title>POF Lehti - Page 1</title>
-            <style>
-                body {
-                    font-family: Arial, sans-serif;
-                    margin: 0;
-                    padding: 0;
-                }
-                .page {
-                    position: relative;
-                    width: 100%;
-                    height: 100vh;
-                    background: url('page_1.png') no-repeat center center;
-                    background-size: contain;
-                }
-                .text {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    padding: 20px;
-                    color: transparent; /* Hide text */
-                }
-            </style>
-        </head>
-        <body>
-            <div class="page">
-                <div class="text">POFINTERIOR.FI 1/2021</div>
-            </div>
-        </body>
-        </html>
-        
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POF Lehti - Page 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .page {
+            position: relative;
+            width: 80%;
+            height: 90vh;
+            background: url('page_1.png') no-repeat center center;
+            background-size: contain;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+        .navigation {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .nav-button {
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid #000;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            text-decoration: none;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="navigation">
+            <span></span>
+            <a href="page_2.html" class="nav-button">Next Page</a>
+        </div>
+    </div>
+</body>
+</html>
